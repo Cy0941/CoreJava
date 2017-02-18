@@ -12,9 +12,17 @@ import java.util.Date;
  */
 public class Employee {
 
+    private String name;
     private double salary;
-
     private Date hireDay;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public double getSalary() {
         return salary;
@@ -22,6 +30,14 @@ public class Employee {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    public Employee(String name, double salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    public Employee() {
     }
 
     public Date getHireDay() {
@@ -32,6 +48,17 @@ public class Employee {
 
     public void setHireDay(Date hireDay) {
         this.hireDay = hireDay;
+    }
+
+    public static void swap(Employee x,Employee y){
+        Employee temp = x;
+        x = y;
+        y = temp;
+    }
+
+    public void raiseSalary(double byPercent){
+        double raise = salary * byPercent / 100;
+        salary += raise;
     }
 }
 
