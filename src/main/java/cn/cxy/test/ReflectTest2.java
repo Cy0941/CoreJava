@@ -63,7 +63,7 @@ public class ReflectTest2 {
             if (modifiers.length()>0){
                 System.out.print(modifiers+" ");
             }
-            System.out.println(type+" "+name);
+            System.out.println(type.getName()+" "+name+" ;");
         }
     }
 
@@ -83,11 +83,11 @@ public class ReflectTest2 {
             if (s.length()>0){
                 sb.append(s+" ");
             }
-            sb.append(returnType+" ");
+            sb.append(returnType.getName()+" ");
             sb.append(name+" ( ");
             for (int i = 0; i < parameterTypes.length; i++) {
                 if (i != parameterTypes.length -1){
-                    sb.append(parameterTypes[i]);
+                    sb.append(parameterTypes[i].getName());
                     sb.append(",");
                 }
             }

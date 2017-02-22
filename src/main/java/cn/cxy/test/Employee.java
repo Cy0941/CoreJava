@@ -71,6 +71,8 @@ class Test{
         double tenYearsInMilliSeconds = 10*365*24*60*60*1000;
         d.setTime(d.getTime()-(long)tenYearsInMilliSeconds);
 
+        //System.out.println(Double.class.getComponentType().isPrimitive());
+
         //TODO JavaBean 中不要编写返回引用可变对象的访问器方法
 
         //TODO 此时 hireDay 属性不仅可以通过 setHireDay() 进行修改，还能通过 harry.getHireDay() 得到的值进行修改 -- 破坏封装
