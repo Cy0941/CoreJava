@@ -1,4 +1,4 @@
-package cn.cxy.test;
+package cn.cxy.test.ch5;
 
 /**
  * Function: TODO
