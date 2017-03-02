@@ -14,14 +14,14 @@ import java.util.Arrays;
 public class EmployeeSortTest {
 
     public static void main(String[] args){
-        Employee[] staff = new Employee[3];
-        staff[0] = new Employee("Harry",35000);
-        staff[1] = new Employee("HarryPorter",25000);
-        staff[2] = new Employee("HarryJack",55000);
+        Employee2[] staff = new Employee2[3];
+        staff[0] = new Employee2("Harry",35000);
+        staff[1] = new Employee2("HarryPorter",25000);
+        staff[2] = new Employee2("HarryJack",55000);
 
         //实现 Comparable<T> 接口，实现自动排序【元素之间必须是可以比较的】
         Arrays.sort(staff);
-        for (Employee e : staff){
+        for (Employee2 e : staff){
             System.out.println("name= "+e.getName()+" , salary="+e.getSalary());
         }
 
@@ -29,7 +29,7 @@ public class EmployeeSortTest {
 
 }
 
-class Employee implements Comparable<Employee>,Cloneable{
+class Employee2 implements Comparable<Employee>,Cloneable{
 
     private String name;
     private double salary;
@@ -55,10 +55,10 @@ class Employee implements Comparable<Employee>,Cloneable{
         salary += raise;
     }
 
-    public Employee() {
+    public Employee2() {
     }
 
-    public Employee(String name, double salary) {
+    public Employee2(String name, double salary) {
         this.name = name;
         this.salary = salary;
     }
