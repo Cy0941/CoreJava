@@ -1,5 +1,7 @@
 package cn.cxy.test.ch6;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -40,5 +42,13 @@ public class MainTest {
         Arrays.sort(dates);
         //System.out.println(count + " comparisons.");
         System.out.println(counter[0]+" comparisons.");
+
+        //匿名内部类
+        ActionListener listener = new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        };
+
     }
 }
