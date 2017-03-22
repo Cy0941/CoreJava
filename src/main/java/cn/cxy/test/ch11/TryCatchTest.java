@@ -1,4 +1,4 @@
-package cn.cxy.test.ch10;
+package cn.cxy.test.ch11;
 
 /**
  * Function: TODO
@@ -11,7 +11,10 @@ package cn.cxy.test.ch10;
 public class TryCatchTest {
 
     public static void main(String[] args){
+        //Logger.getGlobal().setLevel(Level.OFF);//关闭日志记录
+        //Logger.getGlobal().info("File->Open menu item selected");
         int i = tryCatch(2);
+        Thread.dumpStack();
         System.out.println(i);
     }
 
