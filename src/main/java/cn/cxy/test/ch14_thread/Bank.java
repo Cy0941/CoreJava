@@ -13,7 +13,8 @@ public class Bank {
     private final double[] accounts;
 
     public Bank(int n, double initialBalance) {
-        for (int i = 0; i < accounts.length; i++) {
+        accounts = new double[n];
+        for (int i = 0; i < n; i++) {
             accounts[i] = initialBalance;
         }
     }
@@ -22,9 +23,10 @@ public class Bank {
         if (accounts[from] < amount) {
             return;
         }
-        System.out.print(Thread.currentThread());
+        System.out.println(Thread.currentThread());
         accounts[from] -= amount;
-        System.out.printf(" %10.2f from %d to %d", amount, from, to);
+        System.out.printf("%10.2f from %d to %d , and totalBalance is : %s", amount, from, to,getTotalBalance());
+        System.out.println();
         accounts[to] += amount;
     }
 
