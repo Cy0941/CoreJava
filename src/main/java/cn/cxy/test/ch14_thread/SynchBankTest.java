@@ -8,7 +8,7 @@ package cn.cxy.test.ch14_thread;
  * @author: cx.yang
  * @since: Thinkingbar Web Project 1.0
  */
-public class UnsynchBankTest {
+public class SynchBankTest {
 
     public static final int NACCOUNTS = 100;
 public static final double INITIAL_BALANCE = 1000;
