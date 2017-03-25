@@ -1,4 +1,4 @@
-package cn.cxy.test.ch14_thread;
+package cn.cxy.test.ch14_thread.SyncInit;
 
 /**
  * Function: TODO
