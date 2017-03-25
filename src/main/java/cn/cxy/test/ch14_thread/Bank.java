@@ -39,6 +39,7 @@ public class Bank {
             System.out.printf("%10.2f from %d to %d ", amount, from, to);
             System.out.println();
             accounts[to] += amount;
+            //TODO 锁是可重入的 -- 被一个锁保护的代码可以调用另一个使用相同的锁的方法 -- getTotalBalance()
             System.out.printf(" Total Balance: %10.2f%n", getTotalBalance());
         }finally {
             bankLock.unlock();
