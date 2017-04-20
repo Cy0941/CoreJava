@@ -24,6 +24,10 @@ public class XMLReadTest {
      *
      * @param args 示例读取：
      *             <?xml version="1.0" encoding="UTF-8"?>
+     *             //TODO 手动添加DTD描述
+     *             <!DOCTYPE font [
+     *                <!ELEMENT font (name,size)>
+     *             ]>
      *             <font>
  *                  <name color="red">
      *                  HarryPorter
@@ -35,7 +39,14 @@ public class XMLReadTest {
         try {
             //1、获取 DocumentBuilder
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            //TODO 添加DTD描述后配置
+            //a、打开验证
+            factory.setValidating(true);
+            //b、忽略空白字符（TODO 最大的好处之一）
+            factory.setIgnoringElementContentWhitespace(true);
             DocumentBuilder builder = factory.newDocumentBuilder();
+            //cxy 对于解析过程的错误处理 - 安装处理器 - 一个实现了 ErrorHandler 的对象
+            builder.setErrorHandler(null);
             //2、待读取的xml文档
             File file = null;
             //URL url = null; // 或者从 URL 读取
