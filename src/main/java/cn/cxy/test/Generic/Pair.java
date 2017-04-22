@@ -1,4 +1,4 @@
-package cn.cxy.test.ch12_generic;
+package cn.cxy.test.Generic;
 
 /**
  * Function: 泛型类定义

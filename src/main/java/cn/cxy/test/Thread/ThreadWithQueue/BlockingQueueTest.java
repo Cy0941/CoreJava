@@ -1,4 +1,4 @@
-package cn.cxy.test.ch14_thread.ThreadWithQueue;
+package cn.cxy.test.Thread.ThreadWithQueue;
 
 import java.io.File;
 import java.util.Scanner;

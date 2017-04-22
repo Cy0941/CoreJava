@@ -13,4 +13,4 @@
  * @author: cx.yang
  * @since: Thinkingbar Web Project 1.0
  */
-package cn.cxy.test.ch14_thread.ThreadWithQueue;
+package cn.cxy.test.Thread.ThreadWithQueue;

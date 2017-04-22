@@ -1,4 +1,4 @@
-package cn.cxy.test.ch14_thread.ThreadPool;
+package cn.cxy.test.Thread.ThreadPool;
 
 import java.io.File;
 import java.io.FileInputStream;

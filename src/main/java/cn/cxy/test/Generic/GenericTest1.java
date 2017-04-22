@@ -1,7 +1,6 @@
-package cn.cxy.test.ch12_generic;
+package cn.cxy.test.Generic;
 
 import java.io.Serializable;
-import java.util.Comparator;
 
 /**
  * Function: TODO

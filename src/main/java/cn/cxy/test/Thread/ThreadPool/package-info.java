@@ -7,7 +7,7 @@
  * @author: cx.yang
  * @since: Thinkingbar Web Project 1.0
  */
-package cn.cxy.test.ch14_thread.ThreadPool;
+package cn.cxy.test.Thread.ThreadPool;
 
 /**
  * java.util.concurrent.Executors 执行器；构建线程池的几种方法【静态】

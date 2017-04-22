@@ -1,7 +1,6 @@
-package cn.cxy.test.ch13_collection;
+package cn.cxy.test.Collection;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
